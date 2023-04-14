@@ -58,7 +58,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+#lib/
 lib64/
 parts/
 sdist/
@@ -208,3 +208,7 @@ build
 .git/
 
 .idea/
+libs-bak
+CMakeFiles
+CMakeCache.txt
+SHA256_64_merkle_*
