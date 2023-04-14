@@ -1,0 +1,16 @@
+
+py_ecc
+ethsnarks
+# zksnarks_lib
+
+# CFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib
+python-libsnark
+
+### use wasmer
+python-snarks
+
+
+# cryptodome
+pycryptodome
+
+gmpy2
