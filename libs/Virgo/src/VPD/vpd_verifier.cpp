@@ -87,7 +87,7 @@ bool poly_commit::poly_commit_verifier::verify_poly_commitment(prime_field::fiel
 	
     //prepare ratio and array q
     char *command = new char[1024];
-    sprintf(command, "./fft_gkr %d log_fftgkr.txt", log_length - log_slice_number);
+    sprintf(command, "fft_gkr %d log_fftgkr.txt", log_length - log_slice_number);
     system(command);
     FILE *fft_gkr_result = fopen("log_fftgkr.txt", "r");
     float v_time_fft, p_time_fft;

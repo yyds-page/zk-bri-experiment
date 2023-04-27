@@ -8,7 +8,7 @@ os.system('./psdp lanczos2_16.pws lanczos2_16_304_N=256_rdl.pws lanczos2_304_N=2
 os.system('./psdp lanczos2_16.pws lanczos2_16_560_N=1024_rdl.pws lanczos2_560_N=1024_circuit.txt lanczos2_560_N=1024_meta.txt')
 os.system('./psdp lanczos2_16.pws lanczos2_16_1072_N=4096_rdl.pws lanczos2_1072_N=4096_circuit.txt lanczos2_1072_N=4096_meta.txt')
 
-os.system('make -C ../.. zk_proof')
-os.system('make -C ../.. fft_gkr')
-os.system('mv ../../zk_proof .')
-os.system('mv ../../fft_gkr .')
+# os.system('make -C ../.. zk_proof')
+# os.system('make -C ../.. fft_gkr')
+# os.system('mv ../../zk_proof .')
+# os.system('mv ../../fft_gkr .')

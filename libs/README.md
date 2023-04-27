@@ -1,4 +1,4 @@
-#   
+#    
 
 系统建议: ubuntu
 CPU要求：x86_64/amd64
@@ -43,23 +43,15 @@ sudo make install
 
 ```
 
+## https://github.com/meilof/python-libsnark
+
 ```text
 
 https://github.com/meilof/python-libsnark
 
 ```
 
-```shell
-git clone --recurse-submodules https://github.com/sunblaze-ucb/Virgo.git
-cd Virgo
-
-sudo apt install -y  cmake make git clang++-7 libgmp-dev g++ parallel
-
-
-
-```
-
-https://github.com/TAMUCrypto/virgo-plus.git
+## https://github.com/TAMUCrypto/virgo-plus.git
 
 ```shell
 git clone https://github.com/TAMUCrypto/virgo-plus.git
@@ -70,5 +62,35 @@ cd build/
 cmake .. -DCMAKE_BUILD_TYPE=Release 
 make
 
+```
+
+## https://github.com/sunblaze-ucb/Virgo
+
+```shell
+git clone --recurse-submodules https://github.com/sunblaze-ucb/Virgo.git
+cd Virgo
+
+sudo apt install -y  cmake make git libgmp-dev g++ parallel
+
+mkdir build
+cd build
+
+cmake .. -DCMAKE_BUILD_TYPE=Release 
+make -j4        # for example
+
+sudo cp -f fft_gkr zk_proof /usr/local/bin
+
+ls -lrt --block-size=MB 
+
+
+```
+
+
+## other
+
+coredump setup
+
+```shell
+ulimit -c unlimited
 ```
 
